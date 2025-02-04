@@ -1,16 +1,18 @@
 #include <stdio.h>
 
 int main(){
-    char a;
-    scanf("%c", &a);
-    if(a>=33 && a<=47){
-        printf("Special Character");
-    }else if(a>=48 && a<=57){
+    char ch;
+    scanf("%c", &ch);
+    if(ch>='a' && ch<='z'){
+        if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'){
+            printf("Vowel");
+        }else{
+            printf("Consonant");
+        }
+    }else if(ch>='0'' && ch<='9'){
         printf("Digit");
-    }else if(a==97 || a==101 || a==105 || a==111 || a==117){
-        printf("Vowel");
     }else{
-        printf("Consonant");
+        printf("Special Character");
     }
     return 0;
 }
