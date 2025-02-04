@@ -12,5 +12,5 @@ int main(){
     }else{
         printf("Consonant");
     }
-    retrun 0;
+    return 0;
 }
