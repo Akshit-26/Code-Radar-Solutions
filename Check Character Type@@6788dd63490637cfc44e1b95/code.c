@@ -3,8 +3,11 @@
 int main(){
     char ch;
     scanf("%c", &ch);
+    if(isaplha(ch)) {
+        ch = tolower(ch);
+    
     if(ch>='a' && ch<='z'){
-        if(ch=='a' || ch=='e' || ch=='i' || ch=='O' || ch=='u'){
+        if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'){
             printf("Vowel");
         }
         else{
@@ -16,4 +19,5 @@ int main(){
         printf("Special Character");
     }
     return 0;
+    }
 }
