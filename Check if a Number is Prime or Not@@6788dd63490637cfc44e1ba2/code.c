@@ -3,9 +3,9 @@
 int main(){
     int a, flag;
     scanf("%d", &a);
-    if(n>2){
+    if(a>2){
         for(int i=2; i<n; i++){
-            if(n%i==0){
+            if(a%i==0){
                 flag = 0;
                 break;
             }else{
