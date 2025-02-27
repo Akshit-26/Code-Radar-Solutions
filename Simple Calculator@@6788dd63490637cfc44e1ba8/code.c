@@ -12,7 +12,7 @@ int main(){
         printf("%d", a*b);
     }else if(oper=='/'){
         if(b==0){
-            printf("Zero Division Error");
+            printf("error");
         }else{
             printf("%f", a/b);
         }
