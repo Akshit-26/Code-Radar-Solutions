@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    int binary[], num;
+    int binary[100], num;
     int i = 0;
     scanf("%d", &num);
-    while(n > 0){
+    while(num > 0){
         binary[i] = num % 2;
         num /= 2;
         i++;
