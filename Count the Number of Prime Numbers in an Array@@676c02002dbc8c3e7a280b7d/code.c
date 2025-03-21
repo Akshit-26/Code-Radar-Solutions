@@ -15,4 +15,5 @@ int main(){
             count+=1;
         }
     }
+    return 0;
 }
