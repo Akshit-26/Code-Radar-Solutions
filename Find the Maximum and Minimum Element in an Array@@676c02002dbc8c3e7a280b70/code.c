@@ -12,9 +12,8 @@ int main(){
     for(i=1; i<n; i++){
         if(arr[i]>temp){
             temp = arr[i];
-            printf("%d", arr[i]);
         }
     }
-    
+    printf("%d", arr[i]);
     return 0;
 }
