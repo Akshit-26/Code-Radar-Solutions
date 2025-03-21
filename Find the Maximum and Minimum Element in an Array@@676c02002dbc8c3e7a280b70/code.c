@@ -14,6 +14,6 @@ int main(){
             temp = arr[i];
         }
     }
-    printf("%d", arr[i]);
+    printf("%d", temp);
     return 0;
 }
