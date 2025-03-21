@@ -1,5 +1,17 @@
 #include <stdio.h>
 
+int isPrime(int num){
+    if(num <= 1){
+        return 0;
+    }
+    for(int i=0; i<num/2; i++){
+        if(num%i == 0){
+            retrun 0;
+        }
+    }
+    return 1;
+}
+
 int main(){
     int n;
     scanf("%d", &n);
@@ -10,9 +22,9 @@ int main(){
     }
 
     int count = 0;
-    for(int j=2; j<arr[i]/2; j++){
-        if(arr[i]%j==0){
-            count+=1;
+    for(i=0; i<n; i++){
+        if(isPrime){
+            count++;
         }
     }
     return 0;
