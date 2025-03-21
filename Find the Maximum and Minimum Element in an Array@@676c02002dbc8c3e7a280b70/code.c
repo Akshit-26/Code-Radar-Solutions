@@ -12,10 +12,8 @@ int main(){
     for(i=1; i<n; i++){
         if(arr[i]<min){
             min = arr[i];
-        }else{
-            max = arr[i];
         }
     }
-    printf("%d %d", min, max);
+    printf("%d", min);
     return 0;
 }
