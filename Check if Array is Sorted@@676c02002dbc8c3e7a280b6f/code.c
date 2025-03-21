@@ -9,7 +9,11 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    printf("%d", arr[100]);
+    if(arr[i] < arr[i+1]){
+        printf("Sorted");
+    }else{
+        printf("Not Sorted");
+    }
 
     return 0;
 }
