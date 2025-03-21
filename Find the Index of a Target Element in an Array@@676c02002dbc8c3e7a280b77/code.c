@@ -16,7 +16,7 @@ int main(){
         if(arr[i] == k){
             printf("%d", i);
         }else{
-            return -1;
+            printf("-1");
         }
     }
 
