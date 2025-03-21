@@ -13,7 +13,8 @@ int main(){
         if(arr[i]>temp){
             temp = arr[i];
         }
-    }
     printf("%d", arr[i]);
+    }
+    
     return 0;
 }
