@@ -11,6 +11,7 @@ int main(){
 
     if(N==1){
         printf("Sorted");
+        break;
     }
     int isSorted = 0;
     for(i=0; i<N-1; i++){
