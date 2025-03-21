@@ -11,7 +11,7 @@ int main(){
     
     if(N == 1){
         printf("Sorted");
-        break;
+        return 0;;
     }
 
     int isSorted = 0;
