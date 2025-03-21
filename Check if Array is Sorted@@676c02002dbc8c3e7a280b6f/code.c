@@ -11,7 +11,7 @@ int main(){
 
     int isSorted = 0;
     for(i=0; i<N-1; i++){
-        if(arr[i] < arr[i+1]){
+        if(arr[i] <= arr[i+1]){
             isSorted = 1;
             break;
         }
