@@ -12,7 +12,7 @@ int main(){
     int even_count = 0;
     int odd_count = 0;
     for(i=0; i<n; i++){
-        if(arr[i]%2 == 0){
+        if(arr[i]%2 = 0){
             even_count+=1;
         }else{
             odd_count+=1;
