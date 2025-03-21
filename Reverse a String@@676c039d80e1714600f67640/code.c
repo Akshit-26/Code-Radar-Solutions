@@ -6,10 +6,13 @@ int main(){
     scanf("%s", &str);
 
     int length = strlen(str);
-    int temp = str[0];
-    str[0] = str[length-1];
-    str[length-1] = temp;
-
+    int start = 0;
+    int end = n-1;
+    while(start < end){
+        int temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+    }
     printf("%s", str);
 
     return 0;
