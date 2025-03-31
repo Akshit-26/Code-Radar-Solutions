@@ -9,6 +9,10 @@ void findFrequency(int arr[], int n) {
     }
 
     for(i = 0; i < n; i++) {
+        if(visited[i] == 1) {
+            continue;
+        }
+
         int count = 1;  
 
         for(j = i + 1; j < n; j++) {
