@@ -40,6 +40,9 @@ int main() {
     if (result != -1) {
         printf("%d\n", result);
     }
+    else{
+        return -1;
+    }
 
     return 0;
 }
