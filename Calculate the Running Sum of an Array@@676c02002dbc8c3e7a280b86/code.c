@@ -12,7 +12,7 @@ int main(){
     int running_sum = 0;
     for(int i=0; i<n; i++){
         running_sum += arr[i];
-        printf("%d ", arr[i]);
+        printf("%d ", running_sum);
     }
 
     return 0;
