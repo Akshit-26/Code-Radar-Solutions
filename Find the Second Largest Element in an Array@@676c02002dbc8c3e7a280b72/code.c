@@ -4,7 +4,6 @@ int findSecondLargest(int arr[], int n) {
     int first, second;
 
     if (n < 2) {
-        printf("Array should have at least two elements.\n");
         return -1;
     }
 
