@@ -15,10 +15,8 @@ int main() {
                 printf("%d", arr[i]);
                 return 0;
             }
-            if(arr[i] != arr[j]){
-                return -1;
-            }
         }
     }
+    printf("-1");
     return 0;
 }
