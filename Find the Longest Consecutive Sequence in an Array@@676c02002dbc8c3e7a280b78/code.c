@@ -7,7 +7,7 @@ int longestConsecutive(int arr[], int size) {
         int currentNum = arr[i];
         int currentStreak = 1;
 
-        for (int j = i + 1; j < size; j++) {
+        for (int j = i + 1; j < n; j++) {
             if (arr[j] == currentNum + 1) {
                 currentStreak++;
                 currentNum++;
@@ -30,8 +30,6 @@ int main() {
     for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
     }
-
-    int size = sizeof(arr) / sizeof(arr[0]);
 
     int longestSequence = longestConsecutive(arr, size);
     printf("%d\n", longestSequence);
