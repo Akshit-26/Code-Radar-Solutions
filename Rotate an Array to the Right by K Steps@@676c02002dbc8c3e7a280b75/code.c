@@ -31,8 +31,7 @@ int main() {
     rotateRight(arr, n, k);
 
     for (int i = 0; i < n; i++) {
-        printf("%d", arr[i]);
-        printf("\n");
+        printf("%d ", arr[i]);
     }
 
     return 0;
