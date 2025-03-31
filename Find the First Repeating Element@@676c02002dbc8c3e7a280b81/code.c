@@ -13,8 +13,8 @@ int main() {
         for(int j=i+1; j<n; j++){
             if(arr[i] == arr[j]){
                 printf("%d", arr[i]);
-                break;
             }
+            break;
         }
     }
     return 0;
