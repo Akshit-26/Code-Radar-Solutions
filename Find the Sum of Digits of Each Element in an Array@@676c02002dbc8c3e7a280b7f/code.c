@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int n;
@@ -18,7 +19,7 @@ int main() {
             num /= 10;       
         }
 
-        printf("%d ", sum);
+        printf("%d ", abs(sum));
     }
 
     return 0;
