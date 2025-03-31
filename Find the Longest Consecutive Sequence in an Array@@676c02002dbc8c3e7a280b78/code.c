@@ -30,11 +30,11 @@ int main() {
     for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
     }
-    
+
     int size = sizeof(arr) / sizeof(arr[0]);
 
     int longestSequence = longestConsecutive(arr, size);
-    printf("The length of the longest consecutive sequence is: %d\n", longestSequence);
+    printf("%d\n", longestSequence);
 
     return 0;
 }
