@@ -41,7 +41,7 @@ int main() {
         printf("%d\n", result);
     }
     else{
-        printf("-1")
+        printf("-1");
     }
 
     return 0;
