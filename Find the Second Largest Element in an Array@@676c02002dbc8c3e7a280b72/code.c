@@ -1,48 +1,29 @@
 #include <stdio.h>
 
-int findSecondLargest(int arr[], int n) {
-    int first, second;
-
-    if (n < 2) {
-        return -1;
-    }
-
-    first = second = arr[0];
-
-    for (int i = 1; i < n; i++) {
-        if (arr[i] > first) {
-            second = first;
-            first = arr[i];
-        } else if (arr[i] > second && arr[i] != first) {
-            second = arr[i];
-        }
-    }
-
-    if (second == first) {
-        return -1;
-    }
-
-    return second;
-}
-
-int main() {
+int main()
+{
     int n;
-
-    scanf("%d", &n);
-
-    int arr[n];
-
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    scanf("%d",&n);
+    int a[n];
+    for (int i=0;i<n;i++) {
+        scanf("%d",&a[i]);
     }
-
-    int result = findSecondLargest(arr, n);
-    if (result != -1) {
-        printf("%d\n", result);
+    int larg1=a[0];
+    for (int j=0;j<n;j++) {
+        if (a[j]>larg1) 
+            larg1=a[j];
+        }
+    int larg2=a[0];
+    for (int k=0;k<n;k++) {
+        if (a[k]>larg2) {
+            if (a[k]==larg1) {
+                continue;
+            }
+            else
+            larg2=a[k];
+        }
+        
     }
-    else{
-        printf("-1");
-    }
-
+    printf("%d",larg2);
     return 0;
 }
