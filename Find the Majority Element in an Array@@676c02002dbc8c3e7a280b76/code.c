@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int findMajorityElement(int arr[], int size) {
-    for (int i = 0; i < size; i++) {
+int findMajorityElement(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
         int count = 0;
-        for (int j = 0; j < size; j++) {
+        for (int j = 0; j < n; j++) {
             if (arr[j] == arr[i]) {
                 count++;
             }
         }
-        if (count > size / 2) {
+        if (count > n / 2) {
             return arr[i];
         }
     }
@@ -23,10 +23,8 @@ int main() {
     for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
     }
-
-    int size = sizeof(arr) / sizeof(arr[0]);
     
-    int majorityElement = findMajorityElement(arr, size);
+    int majorityElement = findMajorityElement(arr, n);
     
     if (majorityElement != -1) {
         printf("%d\n", majorityElement);
