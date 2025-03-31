@@ -18,7 +18,7 @@ int main() {
             num /= 10;       
         }
 
-        printf("%d ", arr[i], sum);
+        printf("%d ", sum);
     }
 
     return 0;
