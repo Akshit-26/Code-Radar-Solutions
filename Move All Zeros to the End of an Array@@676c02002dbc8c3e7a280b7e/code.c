@@ -29,8 +29,8 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    moveZeroesToEnd(arr, size);
-    printArray(arr, size);
+    moveZeroesToEnd(arr, n);
+    printArray(arr, n);
 
     return 0;
 }
