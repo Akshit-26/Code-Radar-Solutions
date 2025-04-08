@@ -1,4 +1,13 @@
-int fibonacciSeries(int n){
-    if(n <= 0) return n;
-    return fibonacciSeries(n-1) + fibonacciSeries(n-2);
+void fibonacciSeries(int n){
+    int first = 0, second = 1, next, i;
+    for(i = 0; i < n; i++)[
+        if(i <= 1){
+            next = i;
+        }else{
+            next = first + second;
+            first = second;
+            second = next;
+        }
+        printf("%d ", next);
+    ]
 }
