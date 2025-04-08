@@ -6,5 +6,6 @@ void printPrimesInRange(int a, int b){
             }
             printf("%d ", i);
         }
+        return;
     }
 }
