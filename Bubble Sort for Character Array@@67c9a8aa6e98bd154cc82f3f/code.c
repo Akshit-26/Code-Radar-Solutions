@@ -1,19 +1,19 @@
-void selectionSort(char arr[], int n){
-    int i, j, minidx;
+void bubbleSort(char arr[], int n) {
+    int i, j;
     char temp;
-    for(i = 0; i < n-1; i++){
-        minidx = i;
-        for(j = i+1; j < n; j++){
-            if(arr[j] < arr[minidx]) minidx = j;
-        }
-        if(minidx != i){
-            temp = arr[i];
-            arr[i] = arr[minidx];
-            arr[minidx] = temp;
+    for (i = 0; i < n; i++) {
+        for (j = i + 1; j < n; j++) { 
+            if (arr[i] > arr[j]) { 
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
         }
     }
 }
 
-void printArray(int arr[], int n){
-    for(int i = 0; i < n; i++) printf("%c ", arr[i]);
+void printArray(char arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%c ", arr[i]);
+    }
 }
