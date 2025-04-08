@@ -23,6 +23,6 @@ int main(){
     for(int i = 0; i < n; i++){
         scanf("%d", &arr[i]);
     }
-    printf("%d", maxProd);
+    printf("%d", maxProd(arr, n));
     return 0;
 }
