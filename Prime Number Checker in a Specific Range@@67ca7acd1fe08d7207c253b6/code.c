@@ -1,4 +1,5 @@
 void printPrimesInRange(int a, int b){
+    int isPrime = 1;
     for(int i = a; i <= b; i++){
         if(i <= 1) continue;
         int isPrime = 1;
