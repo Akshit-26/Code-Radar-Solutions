@@ -7,6 +7,7 @@ void printPrimesInRange(int a, int b){
                 printf("%d ", i);
                 break;
             }
+            return 0;
         }
     }
 }
