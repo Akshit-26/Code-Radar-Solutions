@@ -2,7 +2,7 @@
 
 void selectionSort(char arr[][100], int n){
     int i, j, minidx;
-    char temp[100]
+    char temp[100];
     for(i = 0; i < n-1; i++){
         minidx = i;
         for(j = i+1; j < n; j++){
