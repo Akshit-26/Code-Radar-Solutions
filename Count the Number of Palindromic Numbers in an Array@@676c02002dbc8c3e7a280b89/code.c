@@ -26,10 +26,15 @@ int countPalindromicElements(int arr[], int size) {
 }
 
 int main() {
-    int arr[] = {121, 123, 131, 145, 1441, 12321, 567};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    scanf("%d", &n);
 
-    int palindromicCount = countPalindromicElements(arr, size);
+    int arr[n];
+    for(int i=0; i<n; i++){
+        scanf("%d", &arr[i]);
+    }
+
+    int palindromicCount = countPalindromicElements(arr, n);
     printf("Number of palindromic elements in the array: %d\n", palindromicCount);
 
     return 0;
