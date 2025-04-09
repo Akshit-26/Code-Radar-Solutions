@@ -9,17 +9,17 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
+    int increasing = 0, decreasing = 0;
     for(int i=0; i<N; i++){
         if(arr[i] >= arr[i+1]){
-            printf("YES");
-            break;
+            decreasing = 1;
         }if(arr[i] <= arr[i+1]){
-            printf("YES");
-            break;
-        }else{
-            printf("NO");
-            break;
+            increasing = 1;
         }
     }
+    
+    if(increasing || decreasing) printf("YES");
+    else printf("NO");
+
     return 0;
 }
