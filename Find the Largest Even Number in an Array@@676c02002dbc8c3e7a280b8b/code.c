@@ -14,6 +14,9 @@ int main(){
             if(arr[i]%2 == 0){
                 brr[i] = arr[i];
             }
+            else{
+                continue;
+            }
     }
     for(int i=0; i<n; i++){
         printf("%d ", brr[i]);
