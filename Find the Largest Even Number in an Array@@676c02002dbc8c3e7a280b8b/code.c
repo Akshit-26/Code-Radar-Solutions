@@ -20,5 +20,8 @@ int main(){
             printf("%d", arr[i]);
 
         }
+        else{
+            printf("-1");
+        }
     }
 }
