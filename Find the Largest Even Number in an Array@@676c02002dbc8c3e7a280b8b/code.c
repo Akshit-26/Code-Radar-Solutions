@@ -13,8 +13,11 @@ int main(){
         if(arr[i] > max){
             max = arr[i];
         }
-        if(arr[i] %2 ==0 && arr[i] == max){
-            printf("%d", max);
+    }
+    for(int i=0; i<n; i++){
+        if(arr[i] % 2 == 0 && arr[i] == max){
+            printf("%d", arr[i]);
+
         }
     }
 }
