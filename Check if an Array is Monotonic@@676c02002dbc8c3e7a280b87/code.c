@@ -13,7 +13,7 @@ int main(){
         if(arr[i] >= arr[i+1]){
             printf("YES");
             break;
-        }else if(arr[i] <= arr[i+1]){
+        }if(arr[i] <= arr[i+1]){
             printf("YES");
             break;
         }else{
