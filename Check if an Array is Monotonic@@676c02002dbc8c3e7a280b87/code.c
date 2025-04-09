@@ -1,27 +1,25 @@
 #include <stdio.h>
 
-int main() {
-    int arr[] = {1, 2, 2, 3}; // You can change the array to test different cases
-    int n = sizeof(arr) / sizeof(arr[0]);
+int main(){
+    int N;
+    scanf("%d", &N);
 
-    int increasing = 1, decreasing = 1; // Flags for checking if the array is increasing or decreasing
-
-    // Loop through the array and check the order of elements
-    for (int i = 1; i < n; i++) {
-        if (arr[i] > arr[i - 1]) {
-            decreasing = 0; // If any element is greater than the previous one, it's not decreasing
-        }
-        if (arr[i] < arr[i - 1]) {
-            increasing = 0; // If any element is smaller than the previous one, it's not increasing
-        }
+    int arr[N], i;
+    for(i=0; i<N; i++){
+        scanf("%d", &arr[i]);
     }
 
-    // Check if the array is either increasing or decreasing
-    if (increasing || decreasing) {
-        printf("The array is monotonic.\n");
-    } else {
-        printf("The array is not monotonic.\n");
+    int increasing = 0, decreasing = 0;
+    for(int i=0; i<N; i++){
+        if(arr[i] >= arr[i+1]){
+            decreasing = 1;
+        }if(arr[i] <= arr[i+1]){
+            increasing = 1;
+        }
     }
+    
+    if(increasing || decreasing) printf("YES");
+    else printf("NO");
 
     return 0;
 }
