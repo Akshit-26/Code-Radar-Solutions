@@ -1,35 +1,36 @@
 #include <stdio.h>
 
-int isPalindrome(int num){
-    int original = num, reversed = 0;
+int isPalindrome(int num) {
+    int original = num;
+    int reversed = 0;
 
-    while(num > 0){
+    // Reverse the number
+    while (num > 0) {
         int digit = num % 10;
-        reversed = reversed*10 + digit;
+        reversed = reversed * 10 + digit;
         num /= 10;
     }
+
+    // Check if the original number is equal to its reverse
     return original == reversed;
 }
 
-int countPalindrome(int arr[], int n){
+int countPalindromicElements(int arr[], int size) {
     int count = 0;
-    for(int i=0; i<n; i++){
-        if(isPalindrome(arr[i]));
-        count++;
+    for (int i = 0; i < size; i++) {
+        if (isPalindrome(arr[i])) {
+            count++;
+        }
     }
     return count;
 }
 
-int main(){
-    int n; 
-    scanf("%d", &n);
+int main() {
+    int arr[] = {121, 123, 131, 145, 1441, 12321, 567};
+    int size = sizeof(arr) / sizeof(arr[0]);
 
-    int arr[n];
-    for(int i=0; i<n; i++){
-        scanf("%d", &arr[i]);
-    }
-    int palindromicCount = countPalindrome(arr, n);
-    printf("%d", palindromicCount);
+    int palindromicCount = countPalindromicElements(arr, size);
+    printf("Number of palindromic elements in the array: %d\n", palindromicCount);
 
     return 0;
 }
