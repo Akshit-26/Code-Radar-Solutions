@@ -12,7 +12,10 @@ int main(){
     int brr[count];
     for(int i=0; i<n; i++){
         for(int j=0; j<count; j++){
-            if(arr[i]%2 == 0) brr[j] = arr[i];
+            if(arr[i]%2 == 0){
+                brr[j] = arr[i];
+                break;
+            }
         }
     }
     for(int i=0; i<n; i++){
