@@ -28,7 +28,8 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d", &arr[i]);
     }
-    printf("%d", countPalindrome(arr, n));
+    int palindromicCount = countPalindrome(arr, n);
+    printf("%d", palindromicCount);
 
     return 0;
 }
