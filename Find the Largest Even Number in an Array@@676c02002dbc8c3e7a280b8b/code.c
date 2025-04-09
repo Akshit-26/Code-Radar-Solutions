@@ -11,11 +11,9 @@ int main(){
     }
     int brr[count];
     for(int i=0; i<n; i++){
-        for(int j=0; j<count; j++){
             if(arr[i]%2 == 0){
-                arr[i] = brr[j];
+                brr[i] = arr[i];
             }
-        }
     }
     for(int i=0; i<n; i++){
         printf("%d ", brr[i]);
