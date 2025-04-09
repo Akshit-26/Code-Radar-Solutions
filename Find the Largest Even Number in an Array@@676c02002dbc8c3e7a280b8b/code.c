@@ -1,6 +1,19 @@
 // Your code here...
 #include <stdio.h>
 
+int findLargestEven(int arr[], int n){
+    int max = arr[0];
+    for(int i=0; i<n; i++){
+        if(arr[i] % 2 == 0){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+    return -1;
+}
+
 int main(){
     int n;
     scanf("%d", &n);
@@ -10,14 +23,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    int max = arr[0];
-    for(int i=0; i<n; i++){
-        if(arr[i] % 2 == 0){
-            if(arr[i] > max){
-                max = arr[i];
-            }
-        }
-    }
+    printf("%d", findLargestEven(arr, n));
     
     return 0;
     
