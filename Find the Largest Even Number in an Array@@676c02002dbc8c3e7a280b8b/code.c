@@ -9,6 +9,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     int max = 0;
+    int found = 0;
     for(int i=0; i<n; i++){
         
         if(arr[i] > max){
@@ -17,9 +18,11 @@ int main(){
     }
     for(int i=0; i<n; i++){
         if(arr[i] % 2 == 0 && arr[i] == max){
-            printf("%d", arr[i]);
-
+            found = 1;
         }
+    }
+    if(found){
+        printf("%d", max);
     }
     else{
         printf("-1");
