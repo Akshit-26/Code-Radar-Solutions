@@ -9,8 +9,7 @@ int findLargestEven(int arr[], int n){
                 max = arr[i];
             }
         }
-    }
-    return (max = arr[0]) ? -1 : max;
+    } return max;
 }
 
 int main(){
