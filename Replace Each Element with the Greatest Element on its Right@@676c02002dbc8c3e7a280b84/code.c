@@ -16,7 +16,7 @@ int main(){
                 arr[i] = arr[j]; 
                 arr[j] = temp;
             }
-            printf("%d ", arr[i]);
+            printf("%d ", arr[j]);
         }
     }
     return 0;
