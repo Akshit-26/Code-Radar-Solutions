@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 int findLargestEven(int arr[], int n){
